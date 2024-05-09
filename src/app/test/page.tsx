@@ -1,10 +1,15 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import { initializeGoogleTagManager } from "./googleTagManager";
 
 const Test = () => {
+  useEffect(() => {
+    // Initialize Google Tag Manager with your GTM ID
+    initializeGoogleTagManager("GTM-WT8FS7X");
+  }, []);
+
   return (
     <div>
-      {"testPage"}
       <div
         onClick={() => {
           console.log("clicked");
