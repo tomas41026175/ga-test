@@ -14,7 +14,9 @@ const Test = () => {
         onClick={() => {
           console.log("clicked");
         }}
-      ></div>
+      >
+        Click
+      </div>
     </div>
   );
 };
