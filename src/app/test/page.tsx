@@ -6,6 +6,8 @@ const Test = () => {
   useEffect(() => {
     // Initialize Google Tag Manager with your GTM ID
     initializeGoogleTagManager("GTM-WT8FS7X");
+    
+    console.log('ga initialized');
   }, []);
 
   return (
